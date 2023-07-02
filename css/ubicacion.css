@@ -1,0 +1,24 @@
+.container-ubication{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-ubication p{
+    font-size: 1.5rem;
+    color: #747474;
+    font-style: italic;
+}
+.container-ubication img{
+    width: 20px;
+    margin-right: 5px;
+}
+.container-map{
+    display: flex;
+    width: 70vw;
+    min-width: 300px;
+    max-width: 700px;
+    margin: 15% auto;
+    border-radius: 1rem;
+    box-shadow: -1px 2px 54px 8px rgba(0,0,0,0.7);
+}

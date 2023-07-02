@@ -1,0 +1,105 @@
+.container_slider{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4rem ;
+    box-shadow: 14px 14px 18px black;
+    border-radius: 2rem;
+
+}
+.slider{
+    display: flex;
+    width: 700%;
+    height: 400px;
+    margin-left: -100%;
+}
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.2rem;
+}
+.paso__blur{
+    width:98%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    margin-top: 40%;
+}
+.step_bg_1{
+    background-image: url(../img/step_1.jpg);
+}
+.step_bg_2{
+    background-image: url(../img/bosquejos_step2.png);
+}
+.step_bg_3{
+    background-image: url(../img/step3.jpeg);
+}
+.step_bg_4{
+    background-image: url(../img/step_4.png);
+}
+.step_bg_5{
+    background-image: url(../img/step_5.jpg);
+}
+.step_bg_6{
+    background-image: url(../img/step_6.jpg);
+}
+.step_bg_7{
+    background-image: url(../img/novias3.jpeg);
+}
+.slider_img{
+    width: 40%;
+    height: 40%;
+    transition: .6s;
+    object-fit: cover;
+}
+.slider_img:hover{
+    transform: scale(1.1);
+}
+.slide_text-p{
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(4, 4, 4);
+}
+.swiper-slide h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+.slider__btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 193, 193, 0.7);
+    font-size: 2.2rem;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+.slider__btn:hover{
+    transform: scale(.9);
+    background-color: blanchedalmond;
+    top: 45%;
+}
+.slider__btn--right{
+    right: 10px;
+}
+.slider__btn--left{
+    left: 10px;
+}

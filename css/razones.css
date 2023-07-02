@@ -1,0 +1,59 @@
+.container_razones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+    justify-content: center;
+}
+@media (min-width:700px){
+    .razones{
+        flex-direction: column;
+    }
+}
+.razones{
+    display: flex;
+    min-width: 250px;
+    max-width: 420px;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin: .5rem;
+    margin-bottom: 2rem;
+}
+.razon_img{
+    min-width: 70px;
+    max-width: 100px;
+    min-height: 70px;
+    max-height: 100px;
+    transition: .6s;
+}
+.razon_img:hover{
+    transform: scale(1.2);
+}
+.razon_text{
+    min-width: 180px;
+    max-width: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.razon_text h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.razon_text p{
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: gray;
+}
+@media (max-width:700px){
+    .razon_text p{
+        width: 90%;
+        font-size: .9rem;
+        margin-top: 1rem;
+        color: gray;
+    }
+}

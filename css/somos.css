@@ -1,0 +1,152 @@
+.container-division{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 3% auto;
+    padding: .3rem;
+    margin-bottom: 1rem;
+    border-top: solid 1px #74747488;
+}
+.container-division__center{
+    position: relative;
+    width: auto;
+    height: auto;
+    bottom: 2.0rem;
+    padding: 1.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    color: #747474;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+}
+.container-history{
+    width: 60%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto;
+}
+.container-history__text--up{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: #747474;
+    font-size: 1rem;
+    animation:blur-in 3s linear both;
+}
+
+.container-portada__text{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 4% auto;
+    font-family: 'Lato', sans-serif;
+    color: rgb(17, 13, 13);
+    animation:blur-in 1s linear both;
+}
+.container-portada__text h1{
+    font-size: 2rem;
+    width: 30%;
+}
+
+.container-portada__text p{
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-color: rgb(3, 3, 3);
+    padding: 1rem;
+    border-radius: 1.3rem;
+}
+.container-portada__text p::after{
+    content: " Elegancia";
+    display: inline-block;
+    animation: animation 20s steps(11) infinite;
+    width: 0ch;
+    font-size: 2rem;
+}
+.container-portada__text p::before{
+    display: inline-block;
+    content: "";
+    width: 2px;
+    height: 1.5rem;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    animation: blinking .5s linear alternate infinite;
+}
+/*Media Querys de Typing Effect*/
+
+@media (min-width:550px){
+    .container-portada__text h1{
+        font-size: 3rem;
+    }
+    .container-portada__text p::after{
+        font-size: 3rem;
+    }
+}
+@media (min-width:500px){
+    .container-history{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 800px) {
+    .container-division__center {
+        font-size: 32px;
+    }
+    .container-history{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+@keyframes animation{
+    15%{
+        content: " Elegancia";
+        width: 7.5ch;
+    }
+    25%{
+        width: 0ch;
+    }
+    35%{
+        content: "Profesionalismo";
+        width: 12.5ch;
+    }
+    45%{
+        width: 0ch;
+    }
+    55%{
+        content: " Confianza";
+        width: 8ch;
+    }
+    65%{
+        width: 0ch;;
+    }
+    75%{
+        content: "Glamour";
+        width: 6.8ch;
+    }
+    80%{
+        width: 0ch;
+    }
+    85%{
+        content: "!!";
+        width: 1.2ch;
+    }
+    95%{
+        width: 0ch;
+    }
+}
+@keyframes blinking {
+    100%{
+        width: 0ch;
+    }
+}
+
+/* <div class="container-portada__text">
+            <h1>Somos </h1>
+            <p class="container-portada__text-typing"></p>
+        </div>*/
