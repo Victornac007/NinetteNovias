@@ -14,7 +14,7 @@ function Next(){
         slider.style.transition = "none";
         slider.insertAdjacentElement('beforeend', sliderSectionFirst);
         slider.style.marginLeft = "-100%";
-    }, 500)
+    }, 500);
 }
 btnRight.addEventListener('click',function(){
     Next();
@@ -29,12 +29,12 @@ function Prev(){
         slider.style.transition = "none";
         slider.insertAdjacentElement('afterbegin', sliderSectionLast);
         slider.style.marginLeft = "-100%";
-    }, 500)
+    }, 500);
 }
 btnLeft.addEventListener('click',function(){
     Prev();
 });
 
 setInterval(function(){
-    Next()
-},5000)
+    Next();
+},5000);

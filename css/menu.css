@@ -35,5 +35,5 @@
     text-decoration: none;
     line-height: 1;
     -webkit-font-smoothing: subpixel-antialiased;
-    animation:tracking-in-expand-forward-top 1s linear both;
+    animation: tracking-in-expand-forward-top 1s linear both;
 }
