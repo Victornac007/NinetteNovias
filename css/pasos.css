@@ -1,6 +1,7 @@
 .container_slider{
     width: 90%;
-    max-width: 700px;
+    max-width: 900px;
+    max-height: 500px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -22,18 +23,19 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    border-radius: 1.2rem;
+    border-radius: 1rem;
 }
 .paso__blur{
     width:98%;
     height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     border-radius: 2rem;
-    margin-top: 40%;
+    margin-top: 16rem;
+
 }
 .step_bg_1{
     background-image: url(../img/step_1.jpg);
@@ -84,15 +86,17 @@
     height: 50px;
     background-color: rgba(212, 193, 193, 0.7);
     font-size: 2.2rem;
+    justify-self: center;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
     cursor: pointer;
     transition: .5s;
+    overflow: hidden;
 }
 .slider__btn:hover{
-    transform: scale(.9);
+    transform:scaleX(1.1);
     background-color: blanchedalmond;
     top: 45%;
 }
