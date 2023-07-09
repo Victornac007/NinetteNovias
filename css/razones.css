@@ -48,6 +48,7 @@
     font-size: 1rem;
     margin-top: 1rem;
     color: gray;
+    text-align: justify;
 }
 @media (max-width:700px){
     .razon_text p{
