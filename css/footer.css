@@ -8,7 +8,7 @@ footer p{
     padding-top: 10px;
     font-size: large;
     position: relative;
-    top: 10%;
+    background-color: #B7CADB;
 }
 footer a{
     text-decoration: none;
