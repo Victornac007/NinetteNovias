@@ -44,7 +44,7 @@
     transition: .8s;
 }
 .container-catalogo--item{
-    width: 4rem;
+    width: 3rem;
     height: 3rem;
     background-image: url(../img/libro.gif);
     background-size: contain;
