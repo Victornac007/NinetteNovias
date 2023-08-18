@@ -37,3 +37,46 @@
     -webkit-font-smoothing: subpixel-antialiased;
     animation: tracking-in-expand-forward-top 1s linear both;
 }
+.container-catalogo{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    transition: .8s;
+}
+.container-catalogo--item{
+    width: 4rem;
+    height: 3rem;
+    background-image: url(../img/libro.gif);
+    background-size: contain;
+    background-position: center;
+    border-radius: 25%;
+    background-repeat: no-repeat;
+}
+.catalogo-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: beige;
+    width: 8rem;
+    transition: .8s;
+    border-radius: .6rem;
+    font-family: 'Lato', sans-serif;
+
+}
+.container-catalogo:hover .catalogo-content{
+    display: block;
+    transition: .8s;
+}
+.catalogo-content a{
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+.catalogo-content a:hover{
+    color: rgb(70, 6, 6);
+    transform: scale(1.03);
+    transition: .3s;
+}
