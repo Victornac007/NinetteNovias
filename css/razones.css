@@ -1,14 +1,21 @@
 .container_razones{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 4rem auto;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 30px;
+    margin: 1rem auto;
 }
-@media (min-width:700px){
-    .razones{
+@media (max-width:700px){
+    .container_razones{
+        display: contents;
         flex-direction: column;
+        margin: 1rem auto;
+    }
+    .razones{
+        margin: 2rem 2rem;
     }
 }
 .razones{
@@ -18,8 +25,6 @@
     height: auto;
     flex-direction: row;
     justify-content: center;
-    margin: .5rem;
-    margin-bottom: 2rem;
 }
 .razon_img{
     min-width: 70px;
@@ -49,6 +54,18 @@
     margin-top: 1rem;
     color: gray;
     text-align: justify;
+}
+.razon1{
+    grid-area: 3 / 3 / 5 / 5; 
+}
+.razon2{ 
+    grid-area: 2 / 1 / 4 / 3; 
+}
+.razon3 { 
+    grid-area: 2 / 5 / 4 / 7; 
+}
+.razon4 { 
+    grid-area: 1 / 3 / 3 / 5; 
 }
 @media (max-width:700px){
     .razon_text p{
