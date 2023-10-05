@@ -54,19 +54,18 @@
 .container-catalogo--item{
     width: 3rem;
     height: 3rem;
-    margin-top: 5px;
     background-image: url(../img/libro.gif);
     background-size: contain;
     background-position: center;
-    border-radius: 25%;
     background-repeat: no-repeat;
+    border-color: transparent;
 }
 .catalogo-content{
     display: none;
     position: absolute;
     width: 100%;
     overflow: auto;
-    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.5);
     background-color: beige;
     width: 12rem;
     transition: .8s;
@@ -77,8 +76,6 @@
 }
 .container-catalogo:hover .catalogo-content{
     display: block;
-    transition: 1s cubic-bezier(.075,.82,.165,1);
-
 }
 .catalogo-content a{
     display: block;
@@ -86,6 +83,9 @@
     padding: 10px;
     text-decoration: none;
     line-height: 1;
+    border-bottom: 1px solid rgba(250, 128, 114, 0.809);
+    border-left: 1px solid rgba(250, 128, 114, 0.809) ;
+    border-bottom-left-radius: 5px;
 }
 .catalogo-content a:hover{
     color: rgb(70, 6, 6);
@@ -113,5 +113,9 @@
     }
     .container-menu{
         width: 70%;
+    }
+    .container-catalogo--item{
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
