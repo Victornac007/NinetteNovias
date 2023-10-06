@@ -35,14 +35,14 @@
     position: relative;
     text-decoration: none;
     line-height: 1;
+    font-size: .9rem;
+    text-transform: uppercase;
     -webkit-font-smoothing: subpixel-antialiased;
     animation: tracking-in-expand-forward-top 1s linear both;
 }
 .container-menu__item:hover{
     border-bottom: 1px solid #474343;
     color: #000000d9;
-
-
 }
 .container-catalogo{
     display: inline-block;
@@ -52,12 +52,6 @@
     transition: .8s;
 }
 .container-catalogo--item{
-    width: 3rem;
-    height: 3rem;
-    background-image: url(../img/libro.gif);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     border-color: transparent;
 }
 .catalogo-content{
@@ -66,13 +60,20 @@
     width: 100%;
     overflow: auto;
     box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.5);
-    background-color: beige;
+    background-color: white;
     width: 12rem;
     transition: .8s;
     border-radius: .6rem;
     font-family: 'Lato', sans-serif;
-    transition: 1s cubic-bezier(.075,.82,.165,1);
     padding: 1.5rem;
+}
+.container-catalogo--item img{
+    width: 15px;
+    height: 10px;
+}
+.catalogo-content a{
+    transition: .7s cubic-bezier(.075,.82,.165,1);
+
 }
 .container-catalogo:hover .catalogo-content{
     display: block;
@@ -94,7 +95,7 @@
 }
 @media (max-width: 425px){
     .container-menu__item{
-        font-size: .8rem;
+        font-size: .6rem;
     }
     .social{
         border-bottom: 1px solid rgba(250, 128, 114, 0.809);
@@ -105,17 +106,28 @@
     .container-menu{
         width: 60%;
     }
+    .container-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .container-menu{
+        border-top: 1px solid black;
+        width: 100vw;
+        height: 2rem;
+    }
+    
 }
 @media (max-width:375px){
     .img_logo{
-        width: 100px;
-        height: 80px;
-    }
-    .container-menu{
-        width: 70%;
+        width: 150px;
+        height: 110px;
     }
     .container-catalogo--item{
         width: 2.5rem;
         height: 2.5rem;
+    }
+    .container-catalogo--item img{
+        width: 6px;
+        height: 8px;
     }
 }
