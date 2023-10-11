@@ -10,6 +10,7 @@
     backface-visibility: hidden;
     transform: translateZ(0px);
     align-items: center;
+    justify-content: space-between;
 }
 .container-menu{
     width: 55%;
@@ -24,8 +25,8 @@
 .img_logo{
     display: flex;
     width: 150px;
+    margin-left: 15%;
     border-style: none;
-    margin:  auto;
     animation:tracking-in-expand-forward-top 1s linear both;
     background-color: rgb(255, 255, 255);
 }
@@ -65,7 +66,8 @@
     transition: .8s;
     border-radius: .6rem;
     font-family: 'Lato', sans-serif;
-    padding: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
 }
 .container-catalogo--item img{
     width: 15px;
@@ -81,12 +83,14 @@
 .catalogo-content a{
     display: block;
     color: black;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
     line-height: 1;
+    font-size: .7rem;
     border-bottom: 1px solid rgba(250, 128, 114, 0.809);
-    border-left: 1px solid rgba(250, 128, 114, 0.809) ;
+    border-left: 1px solid rgba(9, 5, 4, 0.809) ;
     border-bottom-left-radius: 5px;
+    padding-bottom: .7rem; 
 }
 .catalogo-content a:hover{
     color: rgb(70, 6, 6);
@@ -112,10 +116,10 @@
     }
     .container-menu{
         border-top: 1px solid black;
+        border-bottom: 1px solid black;
         width: 100vw;
         height: 2rem;
     }
-    
 }
 @media (max-width:375px){
     .img_logo{
@@ -129,5 +133,11 @@
     .container-catalogo--item img{
         width: 6px;
         height: 8px;
+    }
+}
+@media (min-width:425px){
+    .container-header{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 }

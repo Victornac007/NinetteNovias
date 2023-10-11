@@ -81,11 +81,6 @@
         margin-left: 0%;
     }
 }
-@media (min-width:425px){
-    .container__sldr--portada{
-        border-top: solid 25px rgb(0, 0, 0);
-    }
-}
    
 
 
